@@ -1,0 +1,404 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Special Elite', cursive;
+}
+
+body {
+    background-image: url('../img/fondo.jpg');
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #00b39d;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Columnas */
+
+.column-10 {
+    width: 10%;
+    float: left;
+}
+
+.column-80 {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.644);
+    float: left;
+    margin-left: 10%;
+    border-radius: 10px;
+    height: 80%;
+    padding-bottom: 5vw;
+}
+
+.column-100 {
+    width: 100%;
+    padding-top: 3vw;
+}
+
+
+/* Otras clases */
+
+.header {
+    font-size: 2vw;
+}
+
+.header3 {
+    font-size: 2vw;
+}
+
+
+/* Calse texto */
+
+.text {
+    text-align: justify;
+    font-size: 1vw;
+}
+
+.text1 {
+    font-size: 2vw;
+}
+
+.text2 {
+    font-size: 1.5vw;
+}
+
+.text8 {
+    text-align: center;
+    color: white;
+    border: 3px solid white;
+    padding: 1vw;
+}
+
+
+/* Boton de insertar y boton de enviar */
+
+.insertar {
+    width: 30vw;
+    height: 4vw;
+    font-size: 2vw;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #00b39d;
+    color: black;
+}
+
+.boton {
+    width: 40vw;
+    height: 4vw;
+    font-size: 2vw;
+    background-color: #81008de8;
+    border-radius: 5px;
+    color: white;
+    border: solid 3px white;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: black;
+}
+
+.boton:hover {
+    background-color: rgb(243, 3, 243);
+    color: black;
+}
+
+.insertar1 {
+    width: 40vw;
+    height: 4vw;
+    font-size: 2vw;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #00b39d;
+    color: black;
+}
+
+.boton1 {
+    width: 40vw;
+    height: 4vw;
+    font-size: 2vw;
+    background-color: #81008de8;
+    border-radius: 5px;
+    color: white;
+    border: solid 3px white;
+    cursor: pointer;
+}
+
+.boton1:hover {
+    background-color: rgb(243, 3, 243);
+    color: black;
+}
+
+.pista {
+    width: 40vw;
+    height: 4vw;
+    font-size: 2vw;
+    background-color: rgb(211, 104, 55);
+    border-radius: 5px;
+    color: black;
+    border: solid 3px white;
+    cursor: pointer;
+}
+
+.pista:hover {
+    background-color: rgb(212, 212, 69);
+    color: black;
+}
+
+#resp {
+    pointer-events: none;
+}
+
+
+/* Padding */
+
+.padding-laterales {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+
+/* Imagenes */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 25vw;
+}
+
+.gallery1 img {
+    width: 90vw;
+}
+
+.gallery2 img {
+    width: 30vw;
+}
+
+.gallery3 img {
+    width: 50vw;
+}
+
+#escape-room {
+    background-image: url("../img/hacker.png");
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: 90vw;
+    background-position: center;
+}
+
+
+/* Puzzle */
+
+
+/* #entorno {
+    display: block;
+    margin: 0 auto;
+}
+
+#fondo {
+    opacity: 0.3;
+}
+
+#fondo image {
+    width: 20.833333333333332vw;
+    height: 20.833333333333332vw;
+}
+ */
+
+
+/* .padre image {
+    width: 6.979166666666667vw;
+    height: 8.489583333333334vw;
+} */
+
+
+/* Barra congratulations */
+
+#vacio {
+    background-color: #e4e4e4;
+    border: 1px solid black;
+    width: 40vw;
+    padding: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#div_completado {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: #00b39d;
+    width: 0px;
+    padding-top: 5px;
+    padding: 0px;
+}
+
+#div_barra {
+    position: relative;
+    width: 40vw;
+    height: 3vw;
+    top: 0px;
+    left: 2px;
+    color: #000;
+    padding: 0px;
+    padding-top: 0px;
+}
+
+#div_boton {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    text-align: center;
+    padding: 0px;
+    padding-top: 5px;
+}
+
+
+/*  Unos y zeros en movimiento 
+
+.uno img {
+    position: absolute;
+    opacity: .3;
+    animation: unos 3s linear infinite;
+}
+
+.uno img:nth-child(1) {
+    width: 2vw;
+    left: 5%;
+    animation-duration: 15s;
+}
+
+.uno img:nth-child(3) {
+    width: 1.5vw;
+    left: 30%;
+    animation-duration: 10s;
+}
+
+@keyframes unos {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    50% {
+        opacity: .4;
+    }
+    100% {
+        bottom: 200vh;
+        opacity: 0;
+    }
+} */
+
+@media only screen and (max-width: 600px) {
+    /*Media qu*/
+    #escape-room {
+        height: 10vh;
+        background-size: 95vw;
+    }
+    .text {
+        font-size: 3vw;
+        word-spacing: 0.5px;
+    }
+    .header {
+        font-size: 5vw;
+    }
+    .gallery img {
+        width: 80vw;
+    }
+    .gallery1 img {
+        width: 110vw;
+    }
+    .insertar {
+        width: 100%;
+        height: 8vw;
+        font-size: 4vw;
+    }
+    .boton {
+        width: 100%;
+        height: 8vw;
+        font-size: 4vw;
+    }
+    .insertar1 {
+        width: 100%;
+        height: 8vw;
+        font-size: 4vw;
+    }
+    .boton1 {
+        width: 100%;
+        height: 8vw;
+        font-size: 4vw;
+    }
+    .pista {
+        width: 100%;
+        height: 8vw;
+        font-size: 4vw;
+    }
+    .gallery2 img {
+        width: 70vw;
+    }
+    .text1 {
+        font-size: 3.5vw;
+    }
+    #vacio {
+        width: 250px;
+    }
+    #div_completado {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        background-color: #00b39d;
+        width: 0px;
+        padding-top: 5px;
+        padding: 0px;
+    }
+    #div_barra {
+        width: 270px;
+        height: 5vw;
+    }
+    #div_boton {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: 30px;
+        text-align: center;
+        padding: 0px;
+        padding-top: 5px;
+    }
+    .flex2 {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+    .header3 {
+        font-size: 3.5vw;
+    }
+    .gallery3 img {
+        width: 70vw;
+    }
+}
